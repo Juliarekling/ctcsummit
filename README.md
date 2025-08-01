@@ -1,2 +1,3 @@
-# ctcsummit
-Wedsite for CTC Summit (CS50 Final Project)
+# CTC Summit Website
+
+Flask-приложение для сайта саммита с разделами Спикеры и Партнеры.
