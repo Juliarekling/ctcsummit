@@ -3,6 +3,36 @@
 <head>
     <meta charset="UTF-8" />
     <title>Контакты — СТС Summit</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 0 15px;
+        }
+        nav a {
+            margin-right: 10px;
+        }
+        ul.social {
+            list-style: none;
+            padding: 0;
+        }
+        ul.social li {
+            margin: 10px 0;
+        }
+        ul.social li a {
+            text-decoration: none;
+            color: #000;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+        }
+        ul.social li a img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -12,15 +42,30 @@
         <a href="/contacts">Контакты</a>
     </nav>
     <hr>
+
     <h1>Контакты</h1>
     <p>Свяжитесь с нами через:</p>
-    <ul>
-        <li>Email: info@ctcsummit.com</li>
-        <li>Телефон: +49 123 456 7890</li>
-        <li>Соцсети: 
-            <a href="https://www.facebook.com/ctcsummit" target="_blank">Facebook</a>, 
-            <a href="https://www.instagram.com/ctcsummit" target="_blank">Instagram</a>, 
-            <a href="https://twitter.com/ctcsummit" target="_blank">Twitter</a>
+
+    <ul class="social">
+        <li>
+            <a href="mailto:ctcsummit.event@gmail.com">
+                <img src="/static/icons/gmail.png" alt="Email" /> ctcsummit.event@gmail.com
+            </a>
+        </li>
+        <li>
+            <a href="https://t.me/ctcsummit" target="_blank" rel="noopener">
+                <img src="/static/icons/telegram.png" alt="Telegram" /> Telegram
+            </a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/ctc.summit" target="_blank" rel="noopener">
+                <img src="/static/icons/instagram.png" alt="Instagram" /> Instagram
+            </a>
+        </li>
+        <li>
+            <a href="https://www.threads.com/@ctc.summit" target="_blank" rel="noopener">
+                <img src="/static/icons/threads.png" alt="Threads" /> Threads
+            </a>
         </li>
     </ul>
 </body>
