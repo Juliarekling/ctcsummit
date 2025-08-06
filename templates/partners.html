@@ -1,36 +1,75 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Партнёры Саммита</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+#partners {
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #0c1445, #1e2a78); /* глубокий синий градиент */
+  color: #fff;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
 
-    <!-- CSS -->
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #000;
-        }
+#partners h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 2px #000;
+}
 
-        #partners {
-            padding: 60px 20px;
-            background-image: url('{{ url_for("static", filename="background.jpg") }}');
-            background-size: cover;
-            background-position: center;
-            color: #fff;
-            text-align: center;
-            font-family: 'Arial', sans-serif;
-        }
+.partner-card {
+  background-color: rgba(0, 0, 51, 0.7); /* полупрозрачный блок */
+  margin: 30px auto;
+  padding: 25px 20px;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  text-align: left;
+}
 
-        #partners h2 {
-            font-size: 2.5em;
-            margin-bottom: 40px;
-            color: #ffffff;
-            text-shadow: 1px 1px 2px #000;
-        }
+.partner-card h3 {
+  font-size: 1.5em;
+  color: #ffcc00;
+  margin-bottom: 15px;
+}
 
-        .partner-card {
-            background-color: rgba(0, 0, 51, 0.7);
-            padding: 25px 20px;
-            margin: 30px auto;
+.partner-card p {
+  line-height: 1.6;
+  color: #fff;
+  margin: 12px 0;
+}
+
+.partner-card a {
+  color: #66ccff;
+  text-decoration: none;
+}
+
+.partner-card a:hover {
+  text-decoration: underline;
+}
+
+.partner-logo {
+  max-width: 200px;
+  margin: 10px auto 20px;
+  display: block;
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.video-wrapper {
+  max-width: 480px;
+  margin: 20px auto;
+}
+
+.video-wrapper video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+  #partners h2 { font-size: 2em; }
+  .partner-card { padding: 20px 15px; }
+  .partner-logo { max-width: 150px; }
+  .icon { width: 20px; height: 20px; }
+}
