@@ -1,89 +1,25 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Саммит Трёх Стран 2025</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Arial', sans-serif;
-      background-color: #ffffff;
-      color: #222;
-    }
-
-    nav {
-      background-color: #f4f4f4;
-      padding: 15px 20px;
-      text-align: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-
-    nav a {
-      margin: 0 12px;
-      text-decoration: none;
-      color: #007BFF;
-      font-weight: bold;
-      font-size: 16px;
-    }
-
-    nav a:hover {
-      color: #0056b3;
-    }
-
-    .hero {
-      padding: 80px 20px;
-      text-align: center;
-      background: linear-gradient(135deg, #fefefe 0%, #f3f3f3 100%);
-    }
-
-    .hero h1 {
-      font-size: 3em;
-      margin-bottom: 20px;
-      color: #0a0f1c;
-    }
-
-    .hero p {
-      font-size: 1.2em;
-      max-width: 800px;
-      margin: 0 auto;
-      line-height: 1.6em;
-    }
-
-    footer {
-      margin-top: 60px;
-      padding: 20px;
-      background-color: #f4f4f4;
-      text-align: center;
-      font-size: 0.9em;
-      color: #777;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>CTC Summit 2025</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Главная</a></li>
+            <li><a href="{{ url_for('speakers') }}">Спикеры</a></li>
+            <li><a href="{{ url_for('partners') }}">Партнёры</a></li>
+            <li><a href="{{ url_for('faq') }}">FAQ</a></li>
+            <li><a href="{{ url_for('contacts') }}">Контакты</a></li>
+        </ul>
+    </nav>
 
-  <nav>
-    <a href="{{ url_for('index') }}">Главная</a>
-    <a href="{{ url_for('speakers') }}">Спикеры</a>
-    <a href="{{ url_for('partners') }}">Партнёры</a>
-    <a href="{{ url_for('faq') }}">FAQ</a> <!-- ← добавлена кнопка -->
-    <a href="{{ url_for('contacts') }}">Контакты</a>
-  </nav>
-
-  <section class="hero">
-    <h1>Саммит Трёх Стран 2025</h1>
-    <p>
-      В самом сердце Европы — на границе Германии, Франции и Швейцарии — пройдёт международный саммит для маркетологов, блогеров и предпринимателей. 
-      <br><br>
-      17–18 октября 2025 года, Фрайбург. <br>
-      Более 100 участников, живое общение, реальные кейсы и полезные знакомства.
-    </p>
-  </section>
-
-  <footer>
-    &copy; 2025 CTC Summit. Все права защищены.
-  </footer>
-
+    <main>
+        <h1>Саммит Трёх Стран 2025</h1>
+        <p>В самом сердце Европы — Шварцвальд — 17–18 октября 2025 года.</p>
+        <p>Международный саммит, объединяющий профессионалов в области маркетинга, блогинга и бизнеса из Германии, Франции и Швейцарии.</p>
+    </main>
 </body>
 </html>
