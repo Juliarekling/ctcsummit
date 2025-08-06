@@ -1,40 +1,36 @@
-<!-- Премиум партнёр -->
-<div class="partner premium">
-    <h3>🎖️ Премиум партнёр</h3>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Партнёры Саммита</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Логотип ресторана -->
-    <img src="{{ url_for('static', filename='drei_koeniglichen_logo.jpg') }}" alt="Die drei Königlichen Logo" style="max-width: 200px; margin-bottom: 20px;">
+    <!-- CSS -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+        }
 
-    <p><strong>Die drei Königlichen</strong><br>
-    Karl-Friedrich-Straße 29, Emmendingen</p>
+        #partners {
+            padding: 60px 20px;
+            background-image: url('{{ url_for("static", filename="background.jpg") }}');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+        }
 
-    <p>
-        Ресторан Die drei Königlichen — это просторное и уютное место, где мы сможем не только провести саммит, но и пообщаться вживую без толкотни и лишнего шума. Здесь всем будет комфортно — никто не будет «наступать на пятки».
-    </p>
+        #partners h2 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            color: #ffffff;
+            text-shadow: 1px 1px 2px #000;
+        }
 
-    <p>
-        Особенно приятно, что обед пройдёт прямо здесь — в том же ресторане. Нам не придётся расходиться по городу, и каждый сможет выбрать блюда на свой вкус. Это значит, что у нас будет ещё два спокойных и ценных часа для общения и новых знакомств.
-    </p>
-
-    <p>
-        <a href="https://www.instagram.com/reel/C4diHBBKBGF/?igsh=bWR2MndzMHNnY204" target="_blank">
-            📍 Посмотреть, как выглядит локация
-        </a>
-    </p>
-
-    <p>
-        <a href="https://www.instagram.com/diedreikoniglichen_emmendingen" target="_blank">
-            <img src="{{ url_for('static', filename='icons/instagram.svg') }}" alt="Instagram" class="icon">
-            @diedreikoniglichen_emmendingen
-        </a>
-    </p>
-
-    <video controls width="100%">
-        <source src="{{ url_for('static', filename='REX3.mp4') }}" type="video/mp4">
-        Ваш браузер не поддерживает воспроизведение видео.
-    </video>
-
-    <p style="margin-top: 20px;">
-        📞 Если вы тоже желаете провести своё мероприятие в ресторане, звоните: <strong>07641 9553157</strong>
-    </p>
-</div>
+        .partner-card {
+            background-color: rgba(0, 0, 51, 0.7);
+            padding: 25px 20px;
+            margin: 30px auto;
