@@ -1,75 +1,74 @@
-#partners {
-  padding: 60px 20px;
-  background: linear-gradient(135deg, #0c1445, #1e2a78); /* глубокий синий градиент */
-  color: #fff;
-  text-align: center;
-  font-family: 'Arial', sans-serif;
-}
+<section id="partners">
+    <h2>Наши партнёры</h2>
 
-#partners h2 {
-  font-size: 2.5em;
-  margin-bottom: 40px;
-  text-shadow: 1px 1px 2px #000;
-}
+    <!-- Партнёр 1: Ресторан Die drei Königlichen -->
+    <div class="partner premium">
+        <h3>🎖️ Премиум партнёр</h3>
 
-.partner-card {
-  background-color: rgba(0, 0, 51, 0.7); /* полупрозрачный блок */
-  margin: 30px auto;
-  padding: 25px 20px;
-  max-width: 700px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  text-align: left;
-}
+        <!-- Логотип -->
+        <img src="{{ url_for('static', filename='drei_koeniglichen_logo.jpg') }}" alt="Die drei Königlichen Logo" style="max-width: 200px; margin-bottom: 20px;">
 
-.partner-card h3 {
-  font-size: 1.5em;
-  color: #ffcc00;
-  margin-bottom: 15px;
-}
+        <p><strong>Die drei Königlichen</strong><br>
+        Karl-Friedrich-Straße 29, Emmendingen</p>
 
-.partner-card p {
-  line-height: 1.6;
-  color: #fff;
-  margin: 12px 0;
-}
+        <p>
+            Ресторан Die drei Königlichen — это просторное и уютное место, где мы сможем не только провести саммит, но и пообщаться вживую без толкотни и лишнего шума. Здесь всем будет комфортно — никто не будет «наступать на пятки».
+        </p>
 
-.partner-card a {
-  color: #66ccff;
-  text-decoration: none;
-}
+        <p>
+            Особенно приятно, что обед пройдёт прямо здесь — в том же ресторане. Нам не придётся расходиться по городу, и каждый сможет выбрать блюда на свой вкус. Это значит, что у нас будет ещё два спокойных и ценных часа для общения и новых знакомств.
+        </p>
 
-.partner-card a:hover {
-  text-decoration: underline;
-}
+        <p>
+            <a href="https://www.instagram.com/reel/C4diHBBKBGF/?igsh=bWR2MndzMHNnY204" target="_blank">
+                📍 Посмотреть, как выглядит локация
+            </a>
+        </p>
 
-.partner-logo {
-  max-width: 200px;
-  margin: 10px auto 20px;
-  display: block;
-}
+        <p>
+            <a href="https://www.instagram.com/diedreikoniglichen_emmendingen" target="_blank">
+                <img src="{{ url_for('static', filename='icons/instagram.svg') }}" alt="Instagram" class="icon">
+                @diedreikoniglichen_emmendingen
+            </a>
+        </p>
 
-.icon {
-  width: 22px;
-  height: 22px;
-  vertical-align: middle;
-  margin-right: 8px;
-}
+        <video controls width="100%">
+            <source src="{{ url_for('static', filename='REX3.mp4') }}" type="video/mp4">
+            Ваш браузер не поддерживает воспроизведение видео.
+        </video>
 
-.video-wrapper {
-  max-width: 480px;
-  margin: 20px auto;
-}
+        <p style="margin-top: 20px;">
+            📞 Если вы тоже желаете провести своё мероприятие в ресторане, звоните: <strong>07641 9553157</strong>
+        </p>
+    </div>
 
-.video-wrapper video {
-  width: 100%;
-  border-radius: 10px;
-}
+    <hr>
 
-/* Адаптивность */
-@media (max-width: 600px) {
-  #partners h2 { font-size: 2em; }
-  .partner-card { padding: 20px 15px; }
-  .partner-logo { max-width: 150px; }
-  .icon { width: 20px; height: 20px; }
-}
+    <!-- Партнёр 2: Студия дизайна MORNING ERMINE -->
+    <div class="partner visual">
+        <h3>🎨 Визуальный партнёр</h3>
+
+        <!-- Если будет логотип -->
+        <!-- <img src="{{ url_for('static', filename='morning_ermine_logo.jpg') }}" alt="Morning Ermine Logo" style="max-width: 200px; margin-bottom: 20px;"> -->
+
+        <p><strong>Студия дизайна MORNING ERMINE</strong></p>
+
+        <p>
+            <a href="https://youtube.com/@morning_ermine" target="_blank">
+                <img src="{{ url_for('static', filename='icons/youtube.svg') }}" alt="YouTube" class="icon">
+                Смотреть на YouTube
+            </a>
+        </p>
+
+        <p>После просмотра видео вам захочется тоже рисовать 🎨</p>
+
+        <p>
+            📩 Хотите заказать дизайн для себя или своего бизнеса?
+            Напишите в Telegram:
+            <a href="https://t.me/MorningErmine" target="_blank">
+                <img src="{{ url_for('static', filename='icons/telegram.svg') }}" alt="Telegram" class="icon">
+                @MorningErmine
+            </a>
+        </p>
+    </div>
+</section>
