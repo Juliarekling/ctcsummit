@@ -1,69 +1,149 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8" />
-    <title>Спикеры — СТС Summit 2025</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 700px;
-            margin: 40px auto;
-            padding: 0 15px;
-            color: #333;
-        }
-        nav a {
-            margin-right: 15px;
-            text-decoration: none;
-            color: #007acc;
-            font-weight: 600;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #222;
-        }
-        p.description {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            margin-bottom: 30px;
-        }
-        img.speakers-image {
-            display: block;
-            max-width: 100%;
-            height: auto;
-            margin: 0 auto 15px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-        p.coming-soon {
-            text-align: center;
-            font-style: italic;
-            color: #555;
-            font-size: 1rem;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Наши партнёры</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    #partners {
+      padding: 50px 20px;
+      background: linear-gradient(135deg, #0c1445, #1e2a78);
+      color: #fff;
+      text-align: center;
+      font-family: 'Arial', sans-serif;
+    }
+
+    #partners h2 {
+      font-size: 2em;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    .partner-card {
+      background-color: rgba(0, 0, 51, 0.7);
+      margin: 30px auto;
+      padding: 25px 20px;
+      max-width: 700px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      text-align: left;
+      font-size: 1em;
+      line-height: 1.6;
+    }
+
+    .partner-card h3 {
+      font-size: 1.3em;
+      color: #ffcc00;
+      margin-bottom: 15px;
+    }
+
+    .partner-card p {
+      margin: 10px 0;
+      color: #fff;
+    }
+
+    .partner-card a {
+      color: #66ccff;
+      text-decoration: none;
+    }
+
+    .partner-card a:hover {
+      text-decoration: underline;
+    }
+
+    .partner-logo {
+      max-width: 200px;
+      margin: 10px auto 20px;
+      display: block;
+    }
+
+    .designer-logo {
+      max-width: 180px;
+      margin: 15px auto;
+      display: block;
+    }
+
+    .icon {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 6px;
+    }
+
+    @media (max-width: 600px) {
+      #partners h2 { font-size: 1.6em; }
+      .partner-card { padding: 20px 15px; font-size: 0.95em; }
+      .partner-logo, .designer-logo { max-width: 140px; }
+      .icon { width: 18px; height: 18px; }
+    }
+  </style>
 </head>
+
 <body>
-    <nav>
-        <a href="/">Главная</a>
-        <a href="/speakers">Спикеры</a>
-        <a href="/partners">Партнёры</a>
-        <a href="/contacts">Контакты</a>
-    </nav>
+  <section id="partners">
+    <h2>Наши партнёры</h2>
 
-    <h1>Спикеры СТС Summit 2025</h1>
-    <p class="description">
-        На нашем саммите выступят ведущие эксперты в области маркетинга, digital и PR из Германии, Франции и Швейцарии. Каждый спикер — профессионал с богатым опытом и успешными кейсами, готовый поделиться актуальными трендами, стратегиями и инсайтами.
-    </p>
-    <p class="description">
-        Наши выступления — это не просто лекции, а практические советы из жизни: как найти работу за рубежом, как наладить партнёрства, как открыть свой бизнес. Кейсы наших спикеров будут полезны каждому.
-    </p>
+    <!-- Премиум партнёр -->
+    <div class="partner-card">
+      <h3>🎖️ Премиум партнёр</h3>
 
-    <img src="/static/spikers.jpg" alt="Спикеры СТС Summit 2025" class="speakers-image" />
+      <img src="{{ url_for('static', filename='drei_koeniglichen_logo.jpg') }}"
+           alt="Die drei Königlichen Logo" class="partner-logo"
+           onerror="this.style.display='none'">
 
-    <p class="coming-soon">Скоро здесь появятся имена и фотографии спикеров.</p>
+      <p><strong>Die drei Königlichen</strong><br>
+      Karl‑Friedrich‑Straße 29, Emmendingen</p>
+
+      <p>Ресторан Die drei Königlichen — это просторное и уютное место, где мы сможем не только провести саммит, но и пообщаться вживую без толкотни и лишнего шума. Здесь всем будет комфортно — никто не будет «наступать на пятки».</p>
+
+      <p>Обед пройдёт прямо здесь — каждый сможет выбрать блюда на свой вкус — и это ещё два спокойных и ценных часа для общения и новых знакомств.</p>
+
+      <p>
+        <a href="https://www.instagram.com/reel/C4diHBBKBGF/?igsh=bWR2MndzMHNnY204" target="_blank">
+          📍 Посмотреть, как выглядит локация
+        </a>
+      </p>
+
+      <p>
+        <a href="https://www.instagram.com/diedreikoniglichen_emmendingen" target="_blank">
+          <img src="{{ url_for('static', filename='icons/instagram.png') }}" class="icon" alt="Instagram">
+          @diedreikoniglichen_emmendingen
+        </a>
+      </p>
+
+      <p style="margin-top: 20px;">
+        📞 Если вы тоже желаете провести своё мероприятие в ресторане, звоните: <strong>07641 9553157</strong>
+      </p>
+    </div>
+
+    <!-- Визуальный партнёр -->
+    <div class="partner-card">
+      <h3>🎨 Визуальный партнёр</h3>
+
+      <img src="{{ url_for('static', filename='logo designer.png') }}" 
+           alt="Morning Ermine Logo" class="designer-logo"
+           onerror="this.style.display='none'">
+
+      <p><strong>Студия дизайна MORNING ERMINE</strong></p>
+
+      <p>
+        <a href="https://youtube.com/@morning_ermine" target="_blank">
+          <img src="{{ url_for('static', filename='icons/youtube.png') }}" class="icon" alt="YouTube">
+          Смотреть на YouTube
+        </a>
+      </p>
+
+      <p>После просмотра видео вам захочется тоже рисовать 🎨</p>
+
+      <p>
+        📩 Хотите заказать дизайн? Напишите:
+        <a href="https://t.me/MorningErmine" target="_blank">
+          <img src="{{ url_for('static', filename='icons/telegram.png') }}" class="icon" alt="Telegram">
+          @MorningErmine
+        </a>
+      </p>
+    </div>
+  </section>
 </body>
 </html>
