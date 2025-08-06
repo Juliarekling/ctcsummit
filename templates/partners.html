@@ -1,6 +1,10 @@
 <!-- Премиум партнёр -->
 <div class="partner premium">
     <h3>🎖️ Премиум партнёр</h3>
+
+    <!-- Логотип ресторана -->
+    <img src="{{ url_for('static', filename='drei_koeniglichen_logo.png') }}" alt="Die drei Königlichen Logo" style="max-width: 200px; margin-bottom: 20px;">
+
     <p><strong>Die drei Königlichen</strong><br>
     Karl-Friedrich-Straße 29, Emmendingen</p>
 
@@ -14,19 +18,23 @@
 
     <p>
         <a href="https://www.instagram.com/reel/C4diHBBKBGF/?igsh=bWR2MndzMHNnY204" target="_blank">
-            📍Посмотреть, как выглядит локация
+            📍 Посмотреть, как выглядит локация
         </a>
     </p>
 
     <p>
         <a href="https://www.instagram.com/diedreikoniglichen_emmendingen" target="_blank">
-            🔗 Instagram: @diedreikoniglichen_emmendingen
+            <img src="{{ url_for('static', filename='icons/instagram.svg') }}" alt="Instagram" class="icon">
+            @diedreikoniglichen_emmendingen
         </a>
     </p>
 
-    <video controls width="600">
+    <video controls width="100%">
         <source src="{{ url_for('static', filename='REX3.mp4') }}" type="video/mp4">
         Ваш браузер не поддерживает воспроизведение видео.
     </video>
-</div>
 
+    <p style="margin-top: 20px;">
+        📞 Если вы тоже желаете провести своё мероприятие в ресторане, звоните: <strong>07641 9553157</strong>
+    </p>
+</div>
