@@ -24,7 +24,7 @@ The goal was to build a responsive, modern, and multi-page event website using F
  **HTML + CSS** – for layout and styling  
  **Jinja** – for templating  
  **Render** – for live deployment  
- **Git + GitHub** – version control and collaboration  
+ **GitHub** – version control and collaboration  
  **Responsive design** – mobile and tablet ready
 
 ---
@@ -45,11 +45,11 @@ All links are functional and open in new tabs. A navigation menu is available on
 
 ##  Project Goals
 
-- Apply concepts from CS50 in a real-world context  
-- Improve technical communication skills as a marketing specialist  
-- Overcome the fear of programming and gain independence in digital tools  
-- Deploy a working product used by real event participants, partners, and organizers  
-- Gain experience with web development, servers, and domain configuration
+ Apply concepts from CS50 in a real-world context  
+ Improve technical communication skills as a marketing specialist  
+ Overcome the fear of programming and gain independence in digital tools  
+ Deploy a working product used by real event participants, partners, and organizers  
+ Gain experience with web development, servers, and domain configuration
 
 ---
 
