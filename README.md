@@ -55,7 +55,7 @@ All links are functional and open in new tabs. A navigation menu is available on
 
 ##  Project Video
 
-[Watch the video on YouTube](https://youtu.be/mx3BkckrdKI?si=9otpq7zbbJXvCQvc))
+[Watch the video on YouTube](https://youtu.be/mx3BkckrdKI?si=9otpq7zbbJXvCQvc)
 
 ---
 
