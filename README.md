@@ -2,7 +2,7 @@
 Wedsite for CTC Summit (CS50 Final Project)
 # Three Countries Summit — Event Website
 
-## 📌 About the Project
+##  About the Project
 
 This is the final project by **Iuliia Rekling** for the **CS50x: Introduction to Computer Science** course by Harvard University.
 
@@ -11,14 +11,14 @@ The goal was to build a responsive, modern, and multi-page event website using F
 
 ---
 
-## 🌍 Live Website
+##  Live Website
 
 👉 [https://ctcsummit.com](https://ctcsummit.com)  
 (Hosted via Render and connected to a custom domain)
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - **Python + Flask** – for backend and routing  
 - **HTML + CSS** – for layout and styling  
@@ -29,7 +29,7 @@ The goal was to build a responsive, modern, and multi-page event website using F
 
 ---
 
-## 🔗 Website Structure
+##  Website Structure
 
 The website contains 5 main pages:
 
@@ -43,7 +43,7 @@ All links are functional and open in new tabs. A navigation menu is available on
 
 ---
 
-## 🎯 Project Goals
+##  Project Goals
 
 - Apply concepts from CS50 in a real-world context  
 - Improve technical communication skills as a marketing specialist  
@@ -53,13 +53,13 @@ All links are functional and open in new tabs. A navigation menu is available on
 
 ---
 
-## 📹 Project Video
+##  Project Video
 
 [Watch the video on YouTube](https://youtu.be/INSERT-YOUR-LINK-HERE)
 
 ---
 
-## 👩‍💻 About the Author
+##  About the Author
 
 **Iuliia Rekling**  
 Marketing & Digital Communications Specialist  
@@ -69,7 +69,7 @@ Marketing & Digital Communications Specialist
 
 ---
 
-## 📝 License
+##  License
 
 This project was created for educational purposes as part of CS50x.  
 You are welcome to use or adapt it with attribution.
