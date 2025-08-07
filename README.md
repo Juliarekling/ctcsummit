@@ -20,12 +20,12 @@ The goal was to build a responsive, modern, and multi-page event website using F
 
 ##  Technologies Used
 
-- **Python + Flask** – for backend and routing  
-- **HTML + CSS** – for layout and styling  
-- **Jinja** – for templating  
-- **Render** – for live deployment  
-- **Git + GitHub** – version control and collaboration  
-- **Responsive design** – mobile and tablet ready
+ **Python + Flask** – for backend and routing  
+ **HTML + CSS** – for layout and styling  
+ **Jinja** – for templating  
+ **Render** – for live deployment  
+ **Git + GitHub** – version control and collaboration  
+ **Responsive design** – mobile and tablet ready
 
 ---
 
