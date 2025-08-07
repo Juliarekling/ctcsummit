@@ -13,7 +13,7 @@ The goal was to build a responsive, modern, and multi-page event website using F
 
 ##  Live Website
 
-👉 [https://ctcsummit.com](https://ctcsummit.com)  
+ [https://ctcsummit.com](https://ctcsummit.com)  
 (Hosted via Render and connected to a custom domain)
 
 ---
